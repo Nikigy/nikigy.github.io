@@ -1,33 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>My Website</title>
+</head>
+
+<body>
+    <h1>
+        <button class="button-link" onclick="location.href='index.html'">
+            Home
+        </button>
+        <button class="button-link" onclick="location.href='hobbies.html'">
+            Hobbies
+        </button>
+        <button class="button-link" onclick="location.href='programs.html'">
+            Programs
+        </button>
+    </h1>
+    <span>
         <h1>
             This is my Resume
         </h1>
-    <ol>
-        <li>Info</li>
+    </span>
+
+    <div class="gallery">
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://www.kindpng.com/picc/m/424-4245445_transparent-clipboard-clipart-cartoon-clipart-construction-worker-hd.png"
+                    alt="Transparent Clipboard Clipart - Cartoon Clipart Construction Worker" class="round-image"
+                    width="200" height="200">
+            </div>
+            <div class="slide">
+                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fclipground.com%2Fimages%2Fhard-working-person-clipart-6.png&sp=1712942413T14ce679e2f9ad42e95b18627e7bae56ec7bfb319933f5e66471d441ccafc0de6"
+                    alt="Transparent Clipboard Clipart - Cartoon Clipart Construction Worker" class="round-image"
+                    width="200" height="200">
+            </div>
+            <div class="slide">
+                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qfG63AtDRquFaoG-OEClIwHaGe%26pid%3DApi&sp=1712942413Tc3c5f7967b4b5c7a877b6a3ea7c6cdc75eedef0945afc4856ee9d2553ddbaee9"
+                    alt="Transparent Clipboard Clipart - Cartoon Clipart Construction Worker" class="round-image"
+                    width="200" height="200">
+            </div>
+            <div class="slide">
+                <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.c0QevOs071PE9LqazW6QJgHaGT%26pid%3DApi&sp=1712942637T9db37e6cce1fd84cc7c805bb678874faa9866943d9d02ff7f720e93d040019a5"
+                    alt="Transparent Clipboard Clipart - Cartoon Clipart Construction Worker" class="round-image"
+                    width="200" height="200">
+            </div>
+        </div>
+
+        <div class="arrows">
+            <label for="slide1" class="arrow prev">&lt;</label>
+            <label for="slide2" class="arrow next">&gt;</label>
+        </div>
+
+        <div class="dots">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+            <label for="slide4" class="dot"></label>
+        </div>
+    </div>
+    <div>
+        <ol>
+            <li>Info</li>
             <ul>
                 <li>Name: John Doe</li>
             </ul>
-        <li>Work/Volunteer Experience</li>
+            <li>Work/Volunteer Experience</li>
             <ul>
                 <li>I have done volunteer work with various organizations</li>
                 <li>I have gotten work experience with various companies</li>
             </ul>
-        <li>Education</li>
+            <li>Education</li>
             <ul>
                 <li>I have education from High School</li>
                 <li>I have education from college.</li>
             </ul>
-        <li>Extracurricular Activities</li>
+            <li>Extracurricular Activities</li>
             <ul>
                 <li>Aquatic Activies</li>
                 <li>Computer Activities</li>
             </ul>
-        <li>References</li>
+            <li>References</li>
             <table border="2">
                 <tr>
                     <th>Name</th>
@@ -42,6 +100,8 @@
                     <th>555-335-1253</th>
                 </tr>
             </table>
-    </ol>
-    </body>
+        </ol>
+    </div>
+</body>
+
 </html>

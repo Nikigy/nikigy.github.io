@@ -1,25 +1,95 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>
-            My Programs
-        </h1>
-        <table border = "2">
-            <tr>
-                <th>Program Name</th>
-                <th>Description</th>
-                <th>Github Link</th>
-                <th>File</th>
-            </tr>
-            <tr>
-                <th>My Game Name</th>
-                <th>My Game Description</th>
-                <th>My Github Link</th>
-                <th>My Game File</th>
-            </tr>
-        </table>
-    </body>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Game Projects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .game {
+      width: 45%;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .game iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+    }
+
+    .game .links {
+      margin-top: 10px;
+    }
+
+    .game .links a {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    <button class="button-link" onclick="location.href='index.html'">
+        Home
+    </button>
+    <button class="button-link" onclick="location.href='resume.html'">
+        Resume
+    </button>
+    <button class="button-link" onclick="location.href='hobbies.html'">
+        Hobbies
+    </button>
+  </h1>
+  <span>
+    <h1>My Game Projects</h1>
+  </span>
+  <div class="container">
+    <img src="https://www.pngall.com/wp-content/uploads/5/Linux-PNG-Clipart.png" alt="happy tux family" class="round-image" width="200" height="200">
+    <div class="game">
+      <h2>Invaders</h2>
+      <iframe src=programvideos/invaders.mp4 frameborder="0" allowfullscreen></iframe>
+      <p>Shoot the aliens before they get to you!</p>
+      <div class="links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="game1.exe" download>Download</a>
+      </div>
+    </div>
+    <div class="game">
+      <h2>Game 2</h2>
+      <iframe src=programvideos/stacker.mp4 frameborder="0" allowfullscreen></iframe>
+      <p>Description of Game 2.</p>
+      <div class="links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="game2.exe" download>Download</a>
+      </div>
+    </div>
+    <div class="game">
+      <h2>Game 3</h2>
+      <iframe src=programvideos/ascii.mp4 frameborder="0" allowfullscreen></iframe>
+      <p>Description of Game 3.</p>
+      <div class="links">
+        <a href="https://github.com/" target="_blank">GitHub</a>
+        <a href="game3.exe" download>Download</a>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
